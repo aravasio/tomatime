@@ -36,7 +36,7 @@
 		57857A0F2A27DB36003DE42E = {
 			isa = PBXGroup;
 			children = (
-				57857A1A2A27DB36003DE42E /* Tomatime */,
+				57857A1A2A27DB36003DE42E /* tomatime */,
 				57857A192A27DB36003DE42E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +49,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57857A1A2A27DB36003DE42E /* Tomatime */ = {
+		57857A1A2A27DB36003DE42E /* tomatime */ = {
 			isa = PBXGroup;
 			children = (
 				57857A1B2A27DB36003DE42E /* TomatimeApp.swift */,
@@ -58,7 +58,7 @@
 				57857A212A27DB37003DE42E /* Tomatime.entitlements */,
 				57857A222A27DB37003DE42E /* Preview Content */,
 			);
-			path = Tomatime;
+			path = tomatime;
 			sourceTree = "<group>";
 		};
 		57857A222A27DB37003DE42E /* Preview Content */ = {
