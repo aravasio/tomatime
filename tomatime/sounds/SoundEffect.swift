@@ -13,9 +13,6 @@ struct SoundEffect: Hashable {
     let name: String
     
     func play() {
-//        print("Trying to play track \(id).")
-//        AudioServicesPlayAlertSound(id) // seems to work
-//        AudioServicesPlaySystemSound(id) // Does not work
         AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_UserPreferredAlert)) // sound
         AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_FlashScreen)) // flash
     }
@@ -24,7 +21,8 @@ struct SoundEffect: Hashable {
 func getSystemSoundFileEnumerator() -> FileManager.DirectoryEnumerator? {
     guard let libraryDirectory = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .systemDomainMask, true).first,
           let soundsDirectory = NSURL(string: libraryDirectory)?.appendingPathComponent("Sounds"),
-          let soundFileEnumerator = FileManager.default.enumerator(at: soundsDirectory, includingPropertiesForKeys: nil) else { return nil }
+          let soundFileEnumerator = FileManager.default.enumerator(at: soundsDirectory, includingPropertiesForKeys: nil)
+    else { return nil }
     return soundFileEnumerator
 }
 
