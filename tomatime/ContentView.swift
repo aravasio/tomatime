@@ -10,25 +10,25 @@ import SwiftUI
 struct ContentView: View {
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var timeRemaining = 1500
-    @State private var timerRunning = false
+    @State private var isTimerRunning = false
     @State private var soundEffect = SoundEffect.systemSoundEffects.first!
-
+    
     var body: some View {
         VStack {
             CircularProgressBar(timeRemaining: $timeRemaining, totalTime: 1500)
                 .padding(20)
-
+            
             HStack {
                 Button(action: {
                     self.soundEffect.play()
-                    timerRunning = !timerRunning
+                    isTimerRunning = !isTimerRunning
                 }) {
-                    Text(timerRunning ? "Pause" : "Start")
+                    Text(isTimerRunning ? "Pause" : "Start")
                 }
-
+                
                 Button(action: {
                     self.timeRemaining = 1500
-                    self.timerRunning = false
+                    self.isTimerRunning = false
                     self.soundEffect.play()
                 }) {
                     Text("Reset")
@@ -36,7 +36,7 @@ struct ContentView: View {
             }
         }
         .onReceive(timer) { _ in
-            if self.timerRunning && self.timeRemaining > 0 {
+            if self.isTimerRunning && self.timeRemaining > 0 {
                 self.timeRemaining -= 1
             }
         }
