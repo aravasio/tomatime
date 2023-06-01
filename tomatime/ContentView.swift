@@ -21,16 +21,9 @@ struct ContentView: View {
             HStack {
                 Button(action: {
                     self.soundEffect.play()
-                    self.timerRunning = true
+                    timerRunning = !timerRunning
                 }) {
-                    Text("Start")
-                }
-
-                Button(action: {
-                    self.timerRunning = false
-                    self.soundEffect.play()
-                }) {
-                    Text("Pause")
+                    Text(timerRunning ? "Pause" : "Start")
                 }
 
                 Button(action: {
