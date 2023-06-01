@@ -1,0 +1,56 @@
+.DS_Store
+*/.DS_Store
+*.DS_Store
+*Breakpoints_v2.xcbkptlist
+*/Breakpoints_v2.xcbkptlist
+Grability/.DS_Store
+# User specific files
+Example/RappiPayComponents.xcworkspace/xcuserdata/*
+Example/RappiPayComponents.xcodeproj/xcshareddata/xcschemes/*
+Example/RappiPayComponents.xcodeproj/xcshareddata/*
+*/UserInterfaceState.xcuserstate
+coverage
+
+#Scripts output
+scripts/hooks/pre-commit/output.txt
+
+#Pods
+Pods/
+**/Pods
+*/Pods/
+*/Podfile.lock
+Podfile.lock
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.orig
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+## Aditional
+*/xcschememanagement.plist
+xcuserdata/
+DerivedData
+
+Grability/.idea/.name
+Grability/.idea/Grability.iml
+Grability/.idea/misc.xml
+Grability/.idea/modules.xml
+Grability/.idea/workspace.xml
+Grability/.idea/xcode.xml
+Grability/.idea/inspectionProfiles/profiles_settings.xml
+Grability/.idea/inspectionProfiles/Project_Default.xml
+Grability/.idea/runConfigurations/Grability.xml
+Grability/nrdSYM.zip
+DerivedData
+
+## Git hooks
+.githooks/post-checkout
+.githooks/post-commit
+.githooks/post-merge
+.githooks/pre-push

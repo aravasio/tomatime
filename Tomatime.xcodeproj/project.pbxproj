@@ -11,6 +11,8 @@
 		57857A1E2A27DB36003DE42E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857A1D2A27DB36003DE42E /* ContentView.swift */; };
 		57857A202A27DB37003DE42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57857A1F2A27DB37003DE42E /* Assets.xcassets */; };
 		57857A242A27DB37003DE42E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57857A232A27DB37003DE42E /* Preview Assets.xcassets */; };
+		57857A2C2A280198003DE42E /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857A2B2A280198003DE42E /* ClockView.swift */; };
+		57857A312A28024F003DE42E /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57857A302A28024F003DE42E /* SoundEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		57857A1F2A27DB37003DE42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57857A212A27DB37003DE42E /* Tomatime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tomatime.entitlements; sourceTree = "<group>"; };
 		57857A232A27DB37003DE42E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57857A2B2A280198003DE42E /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		57857A302A28024F003DE42E /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 		57857A1A2A27DB36003DE42E /* tomatime */ = {
 			isa = PBXGroup;
 			children = (
-				57857A1B2A27DB36003DE42E /* TomatimeApp.swift */,
+				57857A2D2A280222003DE42E /* sounds */,
+				57857A2A2A28018C003DE42E /* views */,
 				57857A1D2A27DB36003DE42E /* ContentView.swift */,
+				57857A1B2A27DB36003DE42E /* TomatimeApp.swift */,
 				57857A1F2A27DB37003DE42E /* Assets.xcassets */,
 				57857A212A27DB37003DE42E /* Tomatime.entitlements */,
 				57857A222A27DB37003DE42E /* Preview Content */,
@@ -67,6 +73,22 @@
 				57857A232A27DB37003DE42E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57857A2A2A28018C003DE42E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				57857A2B2A280198003DE42E /* ClockView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		57857A2D2A280222003DE42E /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				57857A302A28024F003DE42E /* SoundEffect.swift */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57857A1E2A27DB36003DE42E /* ContentView.swift in Sources */,
+				57857A312A28024F003DE42E /* SoundEffect.swift in Sources */,
+				57857A2C2A280198003DE42E /* ClockView.swift in Sources */,
 				57857A1C2A27DB36003DE42E /* TomatimeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
