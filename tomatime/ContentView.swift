@@ -54,7 +54,12 @@ struct ContentView: View {
         }
         .onReceive(timer) { _ in
             if self.isTimerRunning && self.timeRemaining > 0 {
-                self.timeRemaining -= 1
+//                self.timeRemaining -= 1
+                if iterationState == .working {
+                    self.timeRemaining -= 150
+                } else {
+                    self.timeRemaining -= 10
+                }
             }
         }
     }
