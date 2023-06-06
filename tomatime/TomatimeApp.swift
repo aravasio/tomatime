@@ -11,9 +11,7 @@ import SwiftUI
 struct TomatimeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().onAppear {
-                _ = SoundEffect.systemSoundEffects
-            }
+            ContentView()
         }
     }
 }
